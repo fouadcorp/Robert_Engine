@@ -53,6 +53,7 @@
             this.Name = "Form2";
             this.ShowIcon = false;
             this.Text = "Robert Engine";
+            this.Shown += new System.EventHandler(this.Form2_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -40,18 +40,25 @@ namespace Robert_Engine
             }
         }
 
+        private void form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             Random random = new Random();
-            wait(random.Next(1700,3800));
+            wait(random.Next(500,800));
             label1.Text = "Initializing assets";
-            wait(random.Next(1700, 3800));
+            wait(random.Next(250, 380));
             label1.Text = "Initializing scripts";
-            wait(random.Next(1700, 3800));
+            wait(random.Next(400,690));
             label1.Text = "Waiting for robert";
-            wait(random.Next(1700, 3800));
+            wait(random.Next(300,900));
             Form2 form2 = new Form2();
             form2.Show();
+            this.Hide();
+            form2.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+
         }
 
     }

@@ -17,6 +17,9 @@ namespace Robert_Engine
             InitializeComponent();
         }
 
-        
+        private void Form2_Shown(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
