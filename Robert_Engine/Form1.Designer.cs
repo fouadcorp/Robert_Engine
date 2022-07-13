@@ -65,6 +65,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Robert Engine v7.37.522";
             this.Shown += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
